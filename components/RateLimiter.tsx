@@ -62,7 +62,7 @@ export default function RateLimiter() {
               </button>
             </div>
             <div className="mono text-[12px] space-y-1 min-h-[200px]" aria-live="polite">
-              {log.length === 0 && <div className="text-mute">// belum ada request</div>}
+              {log.length === 0 && <div className="text-mute">{"// belum ada request"}</div>}
               {log.map((l) => (
                 <div key={l.id} className={l.ok ? "text-signal" : "text-ember"}>
                   #{l.id} {l.ok ? "200 OK" : "429 Too Many Requests"}

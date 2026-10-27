@@ -120,7 +120,7 @@ export default function LLMRouter() {
             </div>
 
             <div className="border border-line rounded-2xl bg-panel p-6 mono text-[12px] space-y-3">
-              <div className="text-mute">// session stats</div>
+              <div className="text-mute">{"// session stats"}</div>
               <div className="flex justify-between"><span className="text-mute">requests</span><span>{stats.total}</span></div>
               <div className="flex justify-between"><span className="text-mute">berhasil</span><span className="text-signal">{stats.ok}</span></div>
               <div className="flex justify-between"><span className="text-mute">lewat fallback</span><span className="text-gold">{stats.fallback}</span></div>
