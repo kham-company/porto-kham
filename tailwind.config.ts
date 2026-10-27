@@ -11,8 +11,7 @@ const config: Config = {
         void: "rgb(var(--c-void) / <alpha-value>)",
         ink: "rgb(var(--c-ink) / <alpha-value>)",
         mute: "rgb(var(--c-mute) / <alpha-value>)",
-        line: ({ opacityValue }: { opacityValue?: string }) =>
-          `rgb(var(--c-ink) / ${opacityValue ?? "0.08"})`,
+        line: (({ opacityValue }: { opacityValue?: string }) => `rgb(var(--c-ink) / ${opacityValue ?? "0.08"})`) as unknown as string,
         panel: "rgb(var(--c-panel) / <alpha-value>)",
         panel2: "rgb(var(--c-panel2) / <alpha-value>)",
         ember: "rgb(var(--c-ember) / <alpha-value>)",
