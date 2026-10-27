@@ -6,7 +6,7 @@ import { services } from "@/lib/data";
 import SectionHead from "./SectionHead";
 import Reveal from "./Reveal";
 
-const icons: Record<string, ComponentType<{ size?: number; className?: string }>> = {
+const icons: Record<string, ComponentType<{ size?: number | string; className?: string }>> = {
   bot: Bot,
   cpu: Cpu,
   server: Server,
